@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sundersky</title>
+<meta name="description" content="The sky broke long ago. Sundersky is a strategy game about claiming the sky one span at a time. In development.">
+<meta name="theme-color" content="#1E1A3A">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<!-- Link previews (Discord, X, Reddit and so on). Replace with the full URL once the site is live. -->
+<meta property="og:title" content="Sundersky">
+<meta property="og:description" content="The sky broke long ago. Claim the drifting islands one bridge at a time. A strategy game in development.">
+<meta property="og:image" content="https://sundersky.gg/img/share.jpg">
+<meta property="og:url" content="https://sundersky.gg/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Alegreya:ital@0;1&family=Alegreya+Sans:wght@500&display=swap">
+<style>
+:root {
+  --ink: #1E1A3A;
+  --sky: #2A2550;
+  --glow: #4A6BD8;
+  --parchment: #EDE3CF;
+  --muted: #B9B0CF;
+  --gold: #D9B45A;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 32%, rgba(74,107,216,.30), transparent 70%),
+    radial-gradient(ellipse 90% 70% at 50% 100%, rgba(106,74,184,.18), transparent 70%),
+    linear-gradient(var(--sky), var(--ink));
+  color: var(--parchment);
+  font-family: "Alegreya", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  width: 100%;
+  max-width: 820px;
+  padding: 56px 16px 40px;
+  text-align: center;
+  flex: 1;
+}
+.logo { width: 100%; max-width: 720px; height: auto; display: block; margin: 0 auto 8px; }
+h1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.tagline {
+  font-family: "Marcellus SC", Georgia, serif;
+  font-size: clamp(20px, 3.6vw, 28px);
+  letter-spacing: .06em;
+  color: var(--gold);
+  margin: 8px 0 24px;
+}
+.pitch { max-width: 36em; margin: 0 auto 12px; }
+.status {
+  display: inline-block;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid rgba(237,227,207,.25);
+  border-radius: 999px;
+  padding: 4px 14px;
+  margin: 12px 0 36px;
+}
+nav ul {
+  list-style: none; padding: 0; margin: 0 auto;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+}
+nav a {
+  display: inline-block;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  color: var(--parchment);
+  text-decoration: none;
+  padding: 9px 18px;
+  border: 1px solid rgba(237,227,207,.3);
+  border-radius: 8px;
+  background: rgba(30,26,58,.45);
+  transition: border-color .15s, background .15s;
+}
+nav a:hover, nav a:focus-visible { border-color: var(--glow); background: rgba(74,107,216,.2); outline: none; }
+nav .soon {
+  display: inline-block;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  color: var(--muted);
+  opacity: .6;
+  padding: 9px 18px;
+  border: 1px dashed rgba(237,227,207,.25);
+  border-radius: 8px;
+  cursor: default;
+}
+nav .soon small { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; margin-left: 4px; }
+.contact { margin-top: 36px; color: var(--muted); font-size: 17px; }
+.contact a { color: var(--parchment); }
+footer {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 20px 16px 28px;
+  text-align: center;
+}
+@media (prefers-reduced-motion: reduce) { nav a { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sundersky</h1>
+  <img class="logo" src="img/logo.png" width="1400" height="504" alt="Sundersky logo: a floating island split in two, joined by a stone bridge, with a beam of blue light rising through the gap">
+  <p class="tagline">The heavens broke. The islands endured.</p>
+  <p class="pitch">The sky broke long ago. What's left are islands drifting in the storm, and the bridges you build between them. Sundersky is a strategy game about claiming the sky one span at a time: anchor your bridges, protect your Ancestor, harness energy, and drive your rivals from the sky.</p>
+  <span class="status">In development</span>
+
+  <!-- Check each link opens your account. Discord: add your invite link and remove the comment marks. -->
+  <nav aria-label="Follow Sundersky">
+    <ul>
+      <!-- YouTube channel terminated 2026-11-10, appeal pending. Once restored, replace the next line with:
+      <li><a href="https://www.youtube.com/@sunderskygame" rel="me">YouTube</a></li> -->
+      <li><span class="soon" aria-disabled="true" title="Coming soon">YouTube <small>soon</small></span></li>
+      <li><a href="https://x.com/sunderskygame" rel="me">X</a></li>
+      <li><a href="https://bsky.app/profile/sunderskygame.bsky.social" rel="me">Bluesky</a></li>
+      <li><a href="https://www.reddit.com/r/sundersky/" rel="me">Reddit</a></li>
+      <li><a href="https://www.tiktok.com/@sunderskygame" rel="me">TikTok</a></li>
+      <li><a href="https://www.instagram.com/sunderskygame/" rel="me">Instagram</a></li>
+      <li><a href="https://sunderskygame.itch.io/" rel="me">itch.io</a></li>
+      <li><a href="https://discord.gg/GPAYUmmG2Z">Discord</a></li>
+    </ul>
+  </nav>
+
+  <p class="contact">Contact: <a href="mailto:hello@sundersky.gg">hello@sundersky.gg</a></p>
+</main>
+<footer>Logo and early art are AI-assisted placeholders. Final art will be made by artists.</footer>
+</body>
+</html>
